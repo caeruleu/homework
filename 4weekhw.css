@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(252, 253, 253);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    flex: 0 0 content
+}
+
+main {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+}
+
+h1,
+h2,
+.menu,
+p,
+label,
+footer {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    word-break: break-all;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.menu {
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+#mainpage.menu {
+    color: rgb(52, 84, 122);
+}
+
+nav {
+    margin: 80px;
+}
+
+#page1 {
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin-left: 800px;
+    width: 500px;
+}
+
+#neartoframe {
+    word-break: keep-all;
+}
+
+button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(52, 84, 122);
+}
+
+button:checked {
+    background-color: rgba(52, 84, 122, 0.7)
+}
+
+
+#frame {
+    margin-top: 100px;
+    margin-left: 350px;
+    float: left;
+}
+
+.needcenter {
+    text-align: center;
+}
+
+#page2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 200px;
+    margin-left: 500px;
+    width: 500px;
+}
+
+.fillertext {
+    padding-bottom: 10px;
+    word-break: keep-all;
+}
+
+#projects {
+    width: 100vw;
+}
+
+#page3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    margin-left: 200px;
+}
+
+.skills {
+    width: 25vw;
+}
+
+#portrait {
+    position: relative;
+    left: 600px;
+    bottom: 280px;
+}
+
+#page4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-left: 500px;
+    width: 500px;
+}
+
+#page5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 200px;
+    margin-left: 500px;
+    width: 500px;
+}
+
+footer {
+    background-color: rgb(52, 84, 122);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+#infooter {
+    color: rgb(252, 253, 253)
+}
+
+#contact {
+    width: 5vw;
+    padding: 15px;
+}
