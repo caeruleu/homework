@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(252, 253, 253);
+}
+
+.container {
+    margin: 40px;
+    display: grid;
+    width: 90%;
+    height: 800px;
+    grid-template-areas: "sidebar header header"
+        "sidebar content content"
+        "sidebar content content";
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 45px 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "button_search search nav basket account";
+    grid-template-columns: 40px 300px 1fr 40px 40px;
+    grid-gap: 10px;
+}
+
+.search {
+    grid-area: search;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.basket {
+    grid-area: basket;
+}
+
+.account {
+    grid-area: account;
+}
+
+.sidebar {
+    display: grid;
+    align-items: start;
+    grid-area: sidebar;
+}
+
+#help {
+    align-self: end;
+}
+
+.content {
+    display: grid;
+    margin-top: 30px;
+    grid-template-areas: "section1 section2"
+        "section3 section4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+h3,
+p,
+nav {
+    font-family: 'Sofia', sans-serif;
+    margin-left: 10px;
+    word-break: break-all;
+}
+
+.menu {
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
