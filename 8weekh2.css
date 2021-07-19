@@ -1,0 +1,66 @@
+.page1 {
+    height: 100vh;
+}
+
+.page2 {
+    height: 100vh;
+}
+
+.col {
+    display: flex;
+    margin: 20px 0px 0 0px;
+}
+
+.rowHeader {
+    height: 100px;
+}
+
+.rowMain {
+    margin: 30px 0 0 0;
+}
+
+.guyPic {
+    width: 55%;
+}
+
+.colAside {
+    background-image: url(assets/image/background.png);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.colText {
+    flex-direction: column;
+}
+
+.btnBuy {
+    height: 15%;
+    width: 40%;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.colCard {
+    flex-direction: column;
+}
+
+.illustration {
+    width: 80%;
+    align-self: center;
+}
+
+.colMail {
+    flex-direction: column;
+    background-color: rgba(236, 97, 91, 1);
+    color: white;
+}
+
+.btnSubscribe {
+    height: 30%;
+    width: 40%;
+    margin: 0px 0 10px 10px;
+}
