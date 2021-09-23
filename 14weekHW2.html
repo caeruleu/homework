@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            width: 100px;
+            height: 100px;
+            border: 2px solid gray;
+            margin: 10px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .selected {
+            border: 2px solid salmon;
+            background-color: honeydew;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" onclick="select(this)">
+            <h3>Card title</h3>
+            <p>Card text</p>
+        </div>
+        <div class="card" onclick="select(this)">
+            <h3>Card title</h3>
+            <p>Card text</p>
+        </div>
+        <div class="card" onclick="select(this)">
+            <h3>Card title</h3>
+            <p>Card text</p>
+        </div>
+        <div class="card" onclick="select(this)">
+            <h3>Card title</h3>
+            <p>Card text</p>
+        </div>
+        <div class="card" onclick="select(this)">
+            <h3>Card title</h3>
+            <p>Card text</p>
+        </div>
+    </div>
+
+    <script>
+        function select(sender) {
+            sender.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>
