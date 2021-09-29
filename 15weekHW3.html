@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="color">Выберите цвет:</label>
+    <select name="color" id="color" onchange="changColorTheme()">
+        <option value="white">Белый</option>
+        <option value="beige">Бежевый</option>
+        <option value="blue">Голубой</option>
+        <option value="pink">Розовый</option>
+    </select>
+    <h1>Мой веб-сайт</h1>
+
+    <script>
+        function changeColorTheme() {
+            switch (document.getElementById("color").value) {
+                case "white":
+                    document.body.style.backgroundColor = "white";
+                    break;
+                case "beige":
+                    document.body.style.backgroundColor = "bisque";
+                    break;
+                case "blue":
+                    document.body.style.backgroundColor = "lightblue";
+                    break;
+                case "pink":
+                    document.body.style.backgroundColor = "lightpink";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>
