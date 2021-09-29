@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="15weekHW2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Впервые ВКонтакте?</h1>
+        <form>
+            <label for="name">Имя:</label>
+            <div><input id="name" type="text" placeholder="имя" onclick="classList.add('selected')"></div>
+            <label for="surname">Фамилия:</label>
+            <div><input id="surname" type="text" placeholder="фамилия" onclick="classList.add('selected')"></div>
+            <label for="nickname">Ник:</label>
+            <div><input id="nickname" type="text" placeholder="ник" onclick="classList.add('selected')"></div>
+            <label for="password">Пароль:</label>
+            <div><input id="password" type="text" placeholder="пароль" onclick="classList.add('selected')"></div>
+            <label for="repeatPassword">Повторите пароль:</label>
+            <div><input id="repeatPassword" type="text" placeholder="повторите пароль"
+                    onclick="classList.add('selected')">
+            </div>
+            <div id="errorMessage"></div>
+            <div><button onclick="check()">Зарегистрироваться</button></div>
+        </form>
+    </div>
+
+    <script src="15weekHW2.js"></script>
+</body>
+
+</html>

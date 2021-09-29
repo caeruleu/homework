@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(153, 187, 189);
+    border-radius: 20px;
+    width: 25%;
+}
+
+label {
+    font-size: 18px;
+    color: rgb(1, 1, 59);
+}
+
+input {
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgb(1, 1, 59);
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 15px;
+    background-color: rgb(204, 235, 236);
+    color: rgb(1, 1, 59);
+    border: 0px;
+    border-radius: 15px;
+}
+
+.selected {
+    background-color: rgb(204, 235, 236);
+}
+
+#errorMessage {
+    color: red;
+}
