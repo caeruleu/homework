@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="header">Рассчет стоимости авто</h1>
+    <div>
+        <label for="startPrice">Цена на аукционе:</label>
+        <input type="text" id="startPrice">
+    </div>
+    <div>
+        <label for="carBrand">Аукцион</label>
+        <select name="carBrand" id="carBrand">
+            <option id="default" value="22000">По умолчанию (22000)</option>
+            <option id="1" value="10000">ARAI BAYSIDE</option>
+            <option id="2" value="11000">ARAI OYAMA</option>
+            <option id="3" value="12000">ARAI OYAMA V/T</option>
+            <option id="4" value="13000">ARAI SEDAN</option>
+            <option id="5" value="14000">BAYAUC</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" id="equipment">Повышенная комплектация
+    </div>
+    <div>
+        <label>Тип топлива:</label>
+        <input type="radio" name="fuelType" id="gasoline" value="1">Бензин
+        <div><input type="radio" name="fuelType" id="electricity" value="1.25">Электричество</div>
+    </div>
+    <div>
+        <label for="engineVolume">Объем двигателя, см3:</label>
+        <input type="text" id="engineVolume">
+    </div>
+    <div>
+        <label for="enginePower">Мощность, л.с.:</label>
+        <input type="text" id="enginePower">
+    </div>
+    <div>
+        <label>Возраст автомобиля:</label>
+        <input type="radio" name="carAge" id="age1" value="2">Менее 3 лет
+        <div><input type="radio" name="carAge" id="age2" value="1.5">3-5 лет</div>
+        <div><input type="radio" name="carAge" id="age3" value="1">Более 5 лет</div>
+    </div>
+    <div>
+        <label>Заказчик:</label>
+        <input type="radio" name="recipient" id="individual" value="1">Физическое лицо
+        <div><input type="radio" name="recipient" id="entity" value="2">Юридическое лицо</div>
+    </div>
+    <button onclick="sumPrice()" id="calculate">Рассчитать</button>
+
+    <script src="16weekHW2.js"></script>
+</body>
+
+</html>
