@@ -18,11 +18,11 @@ function formatDate(date) {
     minutes = minutes < 10 ? `0` + minutes : minutes;
 
     if (diffSec <= 1) {
-        return `right now`;
+        return "прямо сейчас";
     } else if (diffMin < 1) {
-        return `${diffSec} seconds ago`;
+        return `${diffSec} секунд назад`;
     } else if (diffHour < 1) {
-        return `${diffMin} minutes ago`;
+        return `${diffMin} минут назад`;
     } else {
         return `${dayOfMonth}.${month}.${year} ${hour}:${minutes}`
     }
