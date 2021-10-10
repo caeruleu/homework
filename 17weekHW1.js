@@ -6,8 +6,8 @@ function validateName() {
         return
     }
 
-    let fullNameClear = fullName.trim(fullName)
-    let names = fullNameClear.split(" ")
+    let fullNameClear = fullName.trim(fullName);
+    let names = fullNameClear.split(" ");
 
     let surname = names[0];
     let Name = names[1];
