@@ -1,6 +1,6 @@
 let date = new Date();
 
-function formatDate(date) {
+let formatDate = (date) => {
     let dayOfMonth = date.getDate();
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
@@ -30,7 +30,7 @@ function formatDate(date) {
 
 alert(formatDate(date));
 
-function showAlert() {
+let showAlert = () => {
     alert(formatDate(date));
 }
 setInterval(showAlert, 30000);
