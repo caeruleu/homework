@@ -8,6 +8,11 @@ function validateName() {
 
     let fullNameClear = fullName.trim(fullName);
     let names = fullNameClear.split(" ");
+    
+    if(names.length<3) {
+        alert("Введите полный ФИО!");
+        return;
+    }
 
     let surname = names[0];
     let Name = names[1];
