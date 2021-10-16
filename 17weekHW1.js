@@ -9,8 +9,8 @@ function validateName() {
     let fullNameClear = fullName.trim(fullName);
     let names = fullNameClear.split(" ");
     
-    if(names.length<3) {
-        alert("Введите полный ФИО!");
+    if(names.length != 3) {
+        alert("Введите корректный ФИО!");
         return;
     }
 
