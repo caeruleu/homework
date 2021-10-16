@@ -1,8 +1,9 @@
 let createRandomArr = () => {
 let arr = []; 
+const numAmount = 10;
     
-for (let i=0;i<10;i++) {
-    let random = Math.floor(Math.random()*(10 - -10)) + -10;
+for (let i=0;i<numAmount;i++) {
+    let random = Math.floor(Math.random()*(numAmount - -numAmount)) + -numAmount;
     arr.push(random);
 }
 
@@ -21,7 +22,7 @@ for(let i=0;i<arr.length;i++) {
     mult = mult * arr[i]; 
 }
 
-let average = mult/10;
+let average = mult/numAmount;
 
 createdArr.innerHTML = `Сгенерировали: ${arr}`;
 minNumber.innerHTML = `Минимальное: ${min}`;
