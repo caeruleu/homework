@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Информация о питомце.</h1>
+    <h3>Для записи на осмотр в ветеринарной клинике "Cats of itgirls" заполните следующую форму:</h3>
+    <form novalidate onsubmit="return false">
+        <div>
+            <label for="name">Имя владельца:</label>
+            <input type="text" id="ownerName" placeholder="имя владельца" required /></div>
+        <fieldset>
+            <legend>О коте</legend>
+            <div>
+                <label for="petname">Кличка:</label>
+                <input type="text" id="petName" placeholder="кличка питомца" required />
+            </div>
+            <div>
+                <label for="breed">Порода:</label>
+                <select id="breed">
+                    <option value="1">Британская короткошерстная</option>
+                    <option value="2">Персидская длинношерстная</option>
+                    <option value="3">Мейн-кун</option>
+                    <option value="4">Сиамская</option>
+                    <option value="5">Русская голубая</option>
+                    <option value="6">Абиссинская</option>
+                    <option value="7">Канадский сфинкс</option>
+                    <option value="8">Беспородный</option>
+                </select></div>
+            <div>
+                <label for="food">Рацион:</label>
+                Сухой корм<input type="checkbox" name="food" id="food" />,
+                Влажный корм<input type="checkbox" name="food" id="food1" />,
+                Птица<input type="checkbox" name="food" id="food2" />,
+                Мясо<input type="checkbox" name="food" id="food3" />,
+                Рыба<input type="checkbox" name="food" id="food4" />
+            </div>
+            <div>
+                <label for="sex">Пол:</label>
+                Женский <input type="radio" name="gender" id="female" checked="checked" />
+                Мужской <input type="radio" name="gender" id="male" />
+            </div>
+        </fieldset>
+        <div>
+            <label for="text">Комментарий владельца:</label>
+            <div><textarea cols="60" rows="10" id="text" placeholder="ваш комментарий" required></textarea></div>
+        </div>
+        <div>
+            <label for="picture">Прикрепите фотографию питомца</label>
+            <input type="file" id="picture" accept="image/*" /></div>
+        <div><button type="submit" onclick="validateAll()">Сохранить</button></div>
+        <div id="forErorrs"></div>
+    </form>
+
+    <script src="18weekHW1.js"></script>
+</body>
+
+</html>

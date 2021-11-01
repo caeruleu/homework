@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+        }
+
+        #commentBox {
+            width: 65%;
+            height: 25vh;
+            background-color: rgba(100, 148, 237, 0.39);
+        }
+
+        button {
+            width: 65%;
+            padding: 10px;
+            background-color: coral;
+            font-size: 16px;
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        #comment {
+            width: 64.5%;
+            height: 10vh;
+            margin: 5px 0 5px 0;
+        }
+
+        #userName {
+            width: 150px;
+        }
+
+        #userPic {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="userName">Введите имя:</label>
+        <input type="text" name="userName" id="userName">
+        <div><label for="userPic">Прикрепите фотографию</label></div>
+        <img src="" alt="ваша картинка" id="userPic">
+        <div><input type="file" name="userPic" id="userPicInput" onchange="showUserPic(event)" accept="image/*"></div>
+        <div id="commentBox"></div>
+        <label>Комментарий:</label>
+        <div><textarea id="comment"></textarea></div>
+        <button onclick="sendComment()">Отправить</button>
+    </div>
+
+    <script src="18weekHW3.js"></script>
+</body>
+
+</html>

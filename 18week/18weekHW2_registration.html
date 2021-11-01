@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Впервые ВКонтакте?</h1>
+        <form onsubmit="return false;" novalidate>
+            <label for="name">Имя:</label>
+            <div><input class="inputs" id="name" type="text" placeholder="имя" required>
+            </div>
+            <label for="surname">Фамилия:</label>
+            <div><input class="inputs" id="surname" type="text" placeholder="фамилия" required></div>
+            <label for="nickname">Ник:</label>
+            <div><input class="inputs" id="nickname" type="text" placeholder="ник" required>
+            </div>
+            <label for="password">Пароль:</label>
+            <div><input class="inputs" id="password" type="text" placeholder="пароль" required></div>
+            <label for="repeatPassword">Повторите пароль:</label>
+            <div><input class="inputs" id="repeatPassword" type="text" placeholder="повторите пароль" required>
+            </div>
+            <div><label for="tel">Введите номер телефона:</label></div>
+            <div><input type="text" class="inputs" id="tel"
+                    pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="Номер телефона" required>
+            </div>
+            <div id="errorsInfo"></div>
+            <div><button onclick="check()">Зарегистрироваться</button></div>
+        </form>
+    </div>
+
+    <script src="18weekHW2.js"></script>
+</body>
+
+</html>
