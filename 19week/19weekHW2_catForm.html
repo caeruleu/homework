@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Информация о питомце.</h1>
+    <h3>Для записи на осмотр в ветеринарной клинике "Cats of itgirls" заполните следующую форму:</h3>
+    <form novalidate onsubmit="return false">
+        <div>
+            <label for="name">Имя владельца:</label>
+            <input type="text" name="ownerName" id="ownerName" placeholder="имя владельца" required /></div>
+        <fieldset>
+            <legend>О коте</legend>
+            <div>
+                <label for="petname">Кличка:</label>
+                <input type="text" name="petName" id="petName" placeholder="кличка питомца" required />
+            </div>
+            <div>
+                <label for="breed">Порода:</label>
+                <select id="breed">
+                    <option value="1">Британская короткошерстная</option>
+                    <option value="2">Персидская длинношерстная</option>
+                    <option value="3">Мейн-кун</option>
+                    <option value="4">Сиамская</option>
+                    <option value="5">Русская голубая</option>
+                    <option value="6">Абиссинская</option>
+                    <option value="7">Канадский сфинкс</option>
+                    <option value="8">Беспородный</option>
+                </select></div>
+            <div>
+                <label for="food">Рацион:</label>
+                Сухой корм<input type="checkbox" name="food" id="food0" value=" Сухой корм" />,
+                Влажный корм<input type="checkbox" name="food" id="food1" value=" Влажный корм" />,
+                Птица<input type="checkbox" name="food" id="food2" value=" Птица" />,
+                Мясо<input type="checkbox" name="food" id="food3" value=" Мясо" />,
+                Рыба<input type="checkbox" name="food" id="food4" value=" Рыба" />
+            </div>
+            <div>
+                <label for="gender">Пол:</label>
+                Женский <input type="radio" name="gender" id="female" value="женский" checked="checked" />
+                Мужской <input type="radio" name="gender" id="male" value="мужской" />
+            </div>
+        </fieldset>
+        <div>
+            <label for="text">Комментарий владельца:</label>
+            <div><textarea cols="60" rows="10" id="ownerComment" placeholder="ваш комментарий" required></textarea>
+            </div>
+        </div>
+        <div>
+            <label for="picture">Прикрепите фотографию питомца</label>
+            <input type="file" id="picture" accept="image/*" /></div>
+        <div><button type="submit" onclick="validateAll()">Сохранить</button></div>
+        <div id="forErorrs"></div>
+    </form>
+
+    <script src="19weekHW2.js"></script>
+</body>
+
+</html>
