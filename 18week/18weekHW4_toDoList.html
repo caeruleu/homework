@@ -9,8 +9,17 @@
 </head>
 
 <body>
-    <div id="container"></div>
-    <button onclick="clearTasks()">Удалить все заметки</button>
+    <div id="container">
+        <fieldset>
+            <legend>Твои заметки:</legend>
+            <div id="existingNotes"></div>
+            <div><button onclick="clearTasks()">Удалить все заметки</button></div>
+        </fieldset>
+        <form onsubmit="return false"><label for="forTask">Введи заметку:</label>
+            <div><input type="text" id="forTask" /></div>
+            <div><button onclick="getTasks()" onclick="saveTasks()">Сохранить новую заметку</button></div>
+        </form>
+    </div>
 
     <script src="18weekHW4.js"></script>
 </body>
