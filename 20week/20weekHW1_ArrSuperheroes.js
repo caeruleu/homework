@@ -34,4 +34,6 @@ const arrSuperheroes = [{
     friends: "Мстители",
     superpowers: "все, что может бог, плюс молот Мьелнир",
     picture: "assets/thor.jpg",
-    }]
+    }];
+
+const arrSuperheroesJson = JSON.stringify(arrSuperheroes);
