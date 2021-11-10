@@ -1,5 +1,3 @@
-const arrSuperheroesJson = JSON.stringify(arrSuperheroes);
-
 document.addEventListener("DOMContentLoaded", function (event) {
     const Superheroes = JSON.parse(arrSuperheroesJson);
     let content = "";
