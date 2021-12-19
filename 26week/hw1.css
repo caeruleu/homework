@@ -1,11 +1,10 @@
 .Superheroes {
-    text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     gap: 10px;
     margin: 10px;
     width: 100%;
-    flex-wrap: wrap;
-    position: relative;
 }
 
 .superheroCard{
