@@ -1,0 +1,19 @@
+.Superheroes {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.superheroCard{
+    width: 24%;
+    min-width: 300px;
+}
+
+.superheroPic {
+    width: 100%;
+    height: 75%;
+}
