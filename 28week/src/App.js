@@ -32,7 +32,6 @@ function App() {
       title = {rate.title}
       price = {rate.price}
       speed = {rate.speed}
-      isHighlighted = {rate.isHighlighted}
       id = {rate.id}
       />)}
     </div>
