@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+#commentBox {
+  /* display: flex;
+  flex-direction: column-reverse; */
+  width: 65%;
+  height: 25vh;
+  background-color: rgba(100, 148, 237, 0.39);
+}
+
+button {
+  width: 65%;
+  padding: 10px;
+  background-color: coral;
+  font-size: 16px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#forComment {
+  width: 64.5%;
+  height: 10vh;
+  margin: 5px 0 5px 0;
+}
+
+.newComment {
+  color: red;
+}
